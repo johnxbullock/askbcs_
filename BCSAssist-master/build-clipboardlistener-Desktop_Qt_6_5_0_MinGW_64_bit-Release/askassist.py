@@ -100,11 +100,14 @@ try:
 
     time.sleep(5)  # use this time to make the askbsc browser the main window on the screen
 
-    #change the window
-    window = gw.getWindowsWithTitle('Google Chrome')[0]
+    # change the window - use one of the methods below
+    # method 1
+    """
+    #window = gw.getWindowsWithTitle('Google Chrome')[0]
 
-    window.activate()  # Bring the window to the foreground
-
+    #window.activate()  # Bring the window to the foreground
+    """
+    # method 2
     pyautogui.hotkey('alt', 'tab')
 
     time.sleep(5)  # Wait for window switch to complete
